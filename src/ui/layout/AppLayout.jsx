@@ -5,7 +5,7 @@ export const AppLayout = ({ children }) => {
     return(
         <div className="flex flex-col">
             <Navbar />
-                <div className="container mx-auto h-screen bg-red-400">
+                <div className="container mx-auto h-screen ">
                     { children }
                 </div>
             <Footer />

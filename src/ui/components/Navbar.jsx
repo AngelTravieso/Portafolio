@@ -4,7 +4,7 @@ import 'animate.css';
 // Navbar
 export const Navbar = () => {
     return(
-        <div className="bg-slate-50 p-5">
+        <div className="bg-slate-100 p-5">
             <div className="flex justify-between items-center">
                 {/* Left Side */}
                 <div className="left-side flex items-center">

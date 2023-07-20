@@ -5,7 +5,7 @@ import { AboutPage, ContactPage, HomePage, ServicesPage } from '../ui/pages';
 export const AppRouter = () => {
  
     return (
-        <>
+        <div className="bg-slate-50">
             <Routes>
                 <Route path='/inicio' element={<HomePage />} />
                 <Route path='/sobre_mi' element={<AboutPage />} />
@@ -14,7 +14,7 @@ export const AppRouter = () => {
 
                 <Route path='/*' element={ <Navigate to='/inicio' /> } />
             </Routes>
-        </>
+        </div>
     )
 
 }
