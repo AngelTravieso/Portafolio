@@ -1,9 +1,11 @@
+import { AppLayout } from "../layout/AppLayout"
+
 export const HomePage = () => {
 
     return(
-        <>
-            <h1>HomePage</h1>
-        </>
+        <AppLayout>
+            h2asd
+        </AppLayout>
     )
 
 }
