@@ -6,10 +6,27 @@ export const Navbar = () => {
     return(
         <div className="bg-slate-50 p-5">
             <div className="flex justify-between items-center">
-                {/* Angel Travieso */}
-                <div className="nav-word flex flex-col items-center">
-                    <p className='text-4xl leading-10 font-medium animate__animated animate__fadeInDown'>Angel Travieso</p>
-                    <p className='text-lg italic animate__animated animate__flipInX'>Desarrollador de Software</p>
+                {/* Left Side */}
+                <div className="left-side flex items-center">
+                    {/* Angel Travieso */}
+                    <div className="nav-word flex flex-col items-center pr-2">
+                        <p className='text-4xl leading-10 font-medium text-dark-grey animate__animated animate__fadeInDown'>Angel Travieso</p>
+                        <p className='text-lg italic text-dark-grey animate__animated animate__flipInX'>Desarrollador de Software</p>
+                    </div>
+                    <div className="navbar-icons flex justify-between">
+                        <div className="icon text-5xl mx-2 text-dark-grey animate__animated animate__fadeIn">
+                            {/* Github */}
+                            <a href="https://github.com/AngelTravieso" target='_blank'>
+                                <i className="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div className="icon text-5xl mx-2 text-dark-grey animate__animated animate__fadeIn">
+                            {/* LinkedIn */}
+                            <a href="https://www.linkedin.com/in/angel-gustavo-travieso-castro" target='_blank'>
+                                <i className="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 {/* NavLinks */}
                 <div className="nav-links px-2 animate__animated animate__fadeInRight">
