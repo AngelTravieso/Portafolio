@@ -3,7 +3,7 @@ import { Navbar } from "../components/Navbar"
 
 export const AppLayout = ({ children }) => {
     return(
-        <div className="flex flex-col">
+        <div className="flex flex-col bg-bg-black-color">
             <Navbar />
                 <div className="container mx-auto h-screen ">
                     { children }
