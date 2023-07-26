@@ -7,10 +7,11 @@ export const AppRouter = () => {
     return (
         <div className="bg-slate-50">
             <Routes>
-                <Route path='/inicio' element={<HomePage />} />
-                <Route path='/sobre_mi' element={<AboutPage />} />
-                <Route path='/servicios' element={<ServicesPage />} />
-                <Route path='/contacto' element={<ContactPage />} />
+                <Route exact path='/' element={<HomePage />} />
+                <Route exact path='/inicio' element={<HomePage />} />
+                <Route exact path='/sobre_mi' element={<AboutPage />} />
+                <Route exact path='/servicios' element={<ServicesPage />} />
+                <Route exact path='/contacto' element={<ContactPage />} />
 
                 <Route path='/*' element={ <Navigate to='/inicio' /> } />
             </Routes>

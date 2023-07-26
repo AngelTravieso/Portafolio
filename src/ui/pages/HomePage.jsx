@@ -5,7 +5,7 @@ export const HomePage = () => {
 
     return(
         <AppLayout>
-            <div class="grid grid-cols-2 gap-2 p-2 h-5/6 place-items-center">
+            <div className="grid grid-cols-2 gap-2 p-2 h-5/6 place-items-center">
                 <div className="animate__animated animate__fadeIn">
                     <h2 className="mb-2 font-bold font-mono text-4xl text-dark-grey md:text-6xl">
                     Hola, soy <span className="relative">
