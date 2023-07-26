@@ -1,13 +1,12 @@
-import 'animate.css';
+import angelImg from "../../assets/angel.png";
 
-// Navbar
 export const Navbar = () => {
     return(
         <>
             <nav className="container mx-auto bg-white-300 h-28 flex justify-evenly items-center">
                 {/*  */}
                 <div className="brand">
-                    <p className="text-white text-4xl">Angel</p>
+                    <img src={ angelImg } alt="Logo imágen" className="w-40" />
                 </div>
                 {/* Links */}
                 <div className="nav-links">
