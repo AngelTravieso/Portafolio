@@ -25,12 +25,16 @@ export const HomePage = () => {
                                 <p className="text-white font-medium text-xl mx-6">Sigueme: </p>
 
                                 <div className="social-links flex">
-                                    <div className="rounded-full border border-teal-500 hover:cursor-pointer text-teal-500 hover:bg-teal-500 hover:text-white px-4 py-2 mx-1 transition ease-in-out duration-300">
-                                        <i className="fa-brands fa-linkedin-in"></i>
-                                    </div>
-                                    <div className="rounded-full border border-teal-500 hover:cursor-pointer text-teal-500 hover:bg-teal-500 hover:text-white px-4 py-2 mx-1 transition ease-in-out duration-300">
-                                        <i className="fa-brands fa-github"></i>
-                                    </div>
+                                    <a href="https://www.linkedin.com/in/angel-gustavo-travieso-castro" target="_blank">
+                                        <div className="rounded-full border border-teal-500 hover:cursor-pointer text-teal-500 hover:bg-teal-500 hover:text-white px-4 py-2 mx-1 transition ease-in-out duration-300">
+                                            <i className="fa-brands fa-linkedin-in"></i>
+                                        </div>
+                                    </a>
+                                    <a href="https://github.com/AngelTravieso" target="_blank">
+                                        <div className="rounded-full border border-teal-500 hover:cursor-pointer text-teal-500 hover:bg-teal-500 hover:text-white px-4 py-2 mx-1 transition ease-in-out duration-300">
+                                            <i className="fa-brands fa-github"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
