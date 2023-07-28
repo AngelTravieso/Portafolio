@@ -1,11 +1,10 @@
-import { Footer } from "../components"
-import { Navbar } from "../components/Navbar"
+import { Navbar, Footer } from "../components";
 
 export const AppLayout = ({ children }) => {
     return(
-        <div className="flex flex-col bg-bg-black-color">
+        <div className="flex flex-col bg-black-color">
             <Navbar />
-                <div className="h-screen ">
+                <div className="">
                     { children }
                 </div>
             <Footer />

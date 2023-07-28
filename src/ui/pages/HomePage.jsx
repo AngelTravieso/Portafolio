@@ -2,11 +2,12 @@ import { AppLayout } from "../layout/AppLayout";
 import avatarImg from "../../assets/avatar.png";
 import 'animate.css';
 
+
 export const HomePage = () => {
     return(
         <AppLayout>
             <div className="container mx-auto p-2">
-                <div className="grid grid-cols-2 gap-2 h-5/6 place-items-center">
+                <div className="grid grid-cols-2 gap-2 place-items-center">
                     <div className="animate__animated animate__fadeIn mx-auto">
                         <img src={ avatarImg } alt="Avatar 3D" className="w-5/6" />
                     </div>
@@ -40,13 +41,11 @@ export const HomePage = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-
             
             <hr className="my-20" />
 
-            <div className="container mx-auto p-2 place-content-center services">
+            <div className="container mx-auto my-12 p-2 place-content-center">
                 <div className="grid grid-cols-2 gap-2">
                     <div className="left-side">
                         <p className="text-teal-500 font-medium text-4xl mb-2">Servicios creativos</p>
@@ -60,9 +59,112 @@ export const HomePage = () => {
                 </div>
             </div>
 
+            <div className="container mx-auto services grid grid-cols-3 gap-6 m-5">
+                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
+                    
+                    <div className="p-8">
+                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
+                            <i className="fa-solid fa-code text-4xl"></i>
+                        </div>
+                        <p className="text-2xl font-medium mb-4">Desarrollo Web</p>
+                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
+                        </p>
+                        
+                        <div className="read-more-btn">
+                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
+                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
+                    <div className="p-8">
 
+                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
+                            <i class="fa-solid fa-mobile-screen text-4xl"></i>
+                        </div>
 
-            
+                        <p className="text-2xl font-medium mb-4">Aplicaciones móviles</p>
+                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
+                        </p>
+                        
+                        <div className="read-more-btn">
+                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
+                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
+                    <div className="p-8">
+
+                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
+                            <i class="fa-solid fa-desktop text-4xl"></i>
+                        </div>
+
+                        <p className="text-2xl font-medium mb-4">Desktop</p>
+                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
+                        </p>
+                        
+                        <div className="read-more-btn">
+                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
+                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
+                    <div className="p-8">
+                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
+                                <i class="fa-solid fa-globe text-4xl"></i>
+                            </div>
+                        <p className="text-2xl font-medium mb-4">Consultoría de proyectos</p>
+                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
+                        </p>
+                        
+                        <div className="read-more-btn">
+                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
+                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
+                    <div className="p-8">
+                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
+                            <i class="fa-solid fa-headphones text-4xl"></i>
+                        </div>
+                        <p className="text-2xl font-medium mb-4">Soporte 24/7</p>
+                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
+                        </p>
+                        
+                        <div className="read-more-btn">
+                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
+                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
+                    <div className="p-8">
+
+                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
+                            <i class="fa-solid fa-paintbrush text-4xl"></i>
+                        </div>
+                        <p className="text-2xl font-medium mb-4">UI / UX</p>
+                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
+                        </p>
+                        
+                        <div className="read-more-btn">
+                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
+                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
         </AppLayout>
     )
 }

@@ -6,7 +6,9 @@ export const Navbar = () => {
             <nav className="container mx-auto bg-white-300 h-28 flex justify-evenly items-center">
                 {/*  */}
                 <div className="brand">
-                    <img src={ angelImg } alt="Logo imágen" className="w-40" />
+                    <a href="/">
+                        <img src={ angelImg } alt="Logo imágen" className="w-40" />
+                    </a>
                 </div>
                 {/* Links */}
                 <div className="nav-links">
