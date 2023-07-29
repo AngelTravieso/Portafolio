@@ -3,7 +3,7 @@ import angelImg from "../../assets/angel.png";
 export const Navbar = () => {
     return(
         <>
-            <nav className="container mx-auto bg-white-300 h-28 flex justify-evenly items-center">
+            <nav className="container mx-auto sticky bg-white-300 h-28 flex justify-evenly items-center">
                 {/*  */}
                 <div className="brand">
                     <a href="/">

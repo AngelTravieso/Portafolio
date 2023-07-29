@@ -1,9 +1,16 @@
 import { AppLayout } from "../layout/AppLayout";
 import avatarImg from "../../assets/avatar.png";
+import { Divider, ServiceCard, Section } from "../components";
+import { services } from "../data";
 import 'animate.css';
 
 
 export const HomePage = () => {
+
+    const serviceItems = services.map((service, idx) => 
+        <ServiceCard key={ idx } info={service} />)
+
+
     return(
         <AppLayout>
             <div className="container mx-auto p-2">
@@ -43,127 +50,25 @@ export const HomePage = () => {
                 </div>
             </div>
             
-            <hr className="my-20" />
+            <Divider marginY={20} />
 
-            <div className="container mx-auto my-12 p-2 place-content-center">
-                <div className="grid grid-cols-2 gap-2">
-                    <div className="left-side">
-                        <p className="text-teal-500 font-medium text-4xl mb-2">Servicios creativos</p>
-                        <p className="text-white font-medium text-5xl">Que puedo hacer por los clientes</p>
-                    </div>
-                    <div className="right-side flex items-center">
-                        <p className="text-white font-medium text-xl">
-                            Cupidatat nulla sunt veniam sit laboris officia labore do ex exercitation excepteur labore sit.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            {/* Servicios */}
+            <Section 
+                title="Servicios creativos"
+                subtitle="Que puedo hacer por los clientes"
+                description="Cupidatat nulla sunt veniam sit laboris officia labore do ex exercitation excepteur labore sit.">
+                {serviceItems}
+            </Section>
 
-            <div className="container mx-auto services grid grid-cols-3 gap-6 m-5">
-                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
-                    
-                    <div className="p-8">
-                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
-                            <i className="fa-solid fa-code text-4xl"></i>
-                        </div>
-                        <p className="text-2xl font-medium mb-4">Desarrollo Web</p>
-                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
-                        </p>
-                        
-                        <div className="read-more-btn">
-                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
-                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
-                    <div className="p-8">
+            <Divider marginY={20} />
 
-                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
-                            <i class="fa-solid fa-mobile-screen text-4xl"></i>
-                        </div>
-
-                        <p className="text-2xl font-medium mb-4">Aplicaciones móviles</p>
-                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
-                        </p>
-                        
-                        <div className="read-more-btn">
-                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
-                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
-                    <div className="p-8">
-
-                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
-                            <i class="fa-solid fa-desktop text-4xl"></i>
-                        </div>
-
-                        <p className="text-2xl font-medium mb-4">Desktop</p>
-                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
-                        </p>
-                        
-                        <div className="read-more-btn">
-                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
-                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
-                    <div className="p-8">
-                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
-                                <i class="fa-solid fa-globe text-4xl"></i>
-                            </div>
-                        <p className="text-2xl font-medium mb-4">Consultoría de proyectos</p>
-                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
-                        </p>
-                        
-                        <div className="read-more-btn">
-                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
-                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
-                    <div className="p-8">
-                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
-                            <i class="fa-solid fa-headphones text-4xl"></i>
-                        </div>
-                        <p className="text-2xl font-medium mb-4">Soporte 24/7</p>
-                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
-                        </p>
-                        
-                        <div className="read-more-btn">
-                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
-                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className="bg-black-color-1 rounded text-white hover:-translate-y-4 transition ease-out duration-500 hover:shadow-stone-700 shadow-md">
-                    <div className="p-8">
-
-                        <div className="icon rounded-full w-24 h-24 mb-4 bg-teal-500 flex justify-center items-center">
-                            <i class="fa-solid fa-paintbrush text-4xl"></i>
-                        </div>
-                        <p className="text-2xl font-medium mb-4">UI / UX</p>
-                        <p className="mb-4">Laboris id sunt adipisicing dolore duis nostrud cillum eiusmod id cupidatat qui adipisicing magna sunt.
-                        </p>
-                        
-                        <div className="read-more-btn">
-                            <i class="fa-solid fa-square text-teal-500 text-sm mr-2"></i>
-                            <button className="text-teal-400 font-medium  hover:text-white transition ease-in-out duration-300">Leer más</button>
-                        </div>
-                    </div>
-                    
-                </div>
-
-            </div>
+            {/* Experiencia y Educación */}
+            <Section 
+                title="Experiencia y Educación"
+                subtitle="Resumen"
+                description="Cupidatat nulla sunt veniam sit laboris officia labore do ex exercitation excepteur labore sit.">
+                
+            </Section>
 
         </AppLayout>
     )
